@@ -1,0 +1,35 @@
+<div class="main-div">
+    <form [formGroup]="form" (ngSubmit)="createAccount()">
+        <mat-card class="login-card ">
+            <mat-card-title color="primary">GraySpot</mat-card-title>
+            <mat-card-subtitle>Create a new account</mat-card-subtitle>
+            <mat-card-content class="content">
+                <mat-form-field>
+                    <mat-label>First Name</mat-label>
+                    <input matInput required formControlName="firstname">
+                </mat-form-field>
+                <mat-form-field required>
+                    <mat-label>Last Name</mat-label>
+                    <input matInput required formControlName="lastname">
+                </mat-form-field>
+                <mat-form-field required>
+                    <mat-label>Email</mat-label>
+                    <input matInput required formControlName="email">
+                </mat-form-field>
+                <mat-form-field required>
+                    <mat-label>Username</mat-label>
+                    <input matInput required formControlName="username">
+                </mat-form-field>
+                <mat-form-field required>
+                    <mat-label>Password</mat-label>
+                    <input matInput required formControlName="password">
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions>
+                <div>
+                    <button type="submit" mat-flat-button color="primary" class="actions">Sign up</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</div>
